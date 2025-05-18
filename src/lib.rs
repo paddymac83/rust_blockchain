@@ -808,7 +808,7 @@ mod tests {
         let mut blockchain = create_test_blockchain();
         
         // Add many blocks to test performance and stability
-        for i in 1..10 {
+        for i in 1..=10 {
             blockchain.add_block(format!("Test Block {}", i)).unwrap();
         }
         
